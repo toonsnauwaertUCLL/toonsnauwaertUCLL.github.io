@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Galerij</title>
+    <style>
+        nav {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .event {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .event-info {
+            text-align: center;
+        }
+
+        .event-info h2 {
+            color: #333;
+        }
+
+        .event-info p {
+            color: #777;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .image-container {
+    width: 250px; /* Fixed width for the image container */
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+        .image {
+            max-width: 100%; /* Allow the image to scale within its container while maintaining its aspect ratio */
+            display: block;
+        }
+
+        /* Modal Styling */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            max-width: 90%; /* Adjust the max-width as needed */
+            max-height: 90%; /* Adjust the max-height as needed */
+        }
+
+        .modal-image {
+            max-width: 60%;
+            max-height: 10%;
+        }
+
+    @media screen and (max-width: 768px) {
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%; /* Adjust the max-width as needed */
+            max-height: 100%; /* Adjust the max-height as needed */
+        }
+    .modal-image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Event Gallery</h1>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="esports.html">Esports</a></li>
+              <li><a href="esports_galary.html">Galerij</a></li>
+            </ul>
+          </nav>
+    </header>
+    <div class="event">
+        <div class="event-info">
+            <h2>IESF World Championship</h2>
+            <p>Iashi Romania</p>
+            <p>August 2023</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-container" onclick="openModal('images/esports/IMG-20230825-WA0001.jpg')">
+                <img class="image" src="images/esports/IMG-20230825-WA0001.jpg" alt="Event Image 1">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/Day_03_20230827_163049_00333.jpg')">
+                <img class="image" src="images/esports/Day_03_20230827_163049_00333.jpg" alt="Event Image 2">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/IMG-20230825-WA0008.jpg')">
+                <img class="image" src="images/esports/IMG-20230825-WA0008.jpg" alt="Event Image 3">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/IMG-20230826-WA0015.jpg')">
+                <img class="image" src="images/esports/IMG-20230826-WA0015.jpg" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/IMG-20230830-WA0004.jpg')">
+                <img class="image" src="images/esports/IMG-20230830-WA0004.jpg" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/IMG-20230830-WA0005.jpg')">
+                <img class="image" src="images/esports/IMG-20230830-WA0005.jpg" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/IMG-20230901-WA0000.jpg')">
+                <img class="image" src="images/esports/IMG-20230901-WA0000.jpg" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/IMG-20230901-WA0002.jpg')">
+                <img class="image" src="images/esports/IMG-20230901-WA0002.jpg" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/76561198195018813.png')">
+                <img class="image" src="images/esports/76561198195018813.png" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/Syther (1).png')">
+                <img class="image" src="images/esports/Syther (1).png" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/Syther (2).png')">
+                <img class="image" src="images/esports/Syther (2).png" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/Syther (3).png')">
+                <img class="image" src="images/esports/Syther (3).png" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/R6II4336.JPG')">
+                <img class="image" src="images/esports/R6II4336.JPG" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/R6II4394.JPG')">
+                <img class="image" src="images/esports/R6II4394.JPG" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/R6II4439.JPG')">
+                <img class="image" src="images/esports/R6II4439.JPG" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/Screenshot_2023-08-30-04-16-47-77_0b2fce7a16bf2b728d6ffa28c8d60efb.jpg')">
+                <img class="image" src="images/esports/Screenshot_2023-08-30-04-16-47-77_0b2fce7a16bf2b728d6ffa28c8d60efb.jpg" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/Screenshot_2023-08-30-04-17-25-75_0b2fce7a16bf2b728d6ffa28c8d60efb.jpg')">
+                <img class="image" src="images/esports/Screenshot_2023-08-30-04-17-25-75_0b2fce7a16bf2b728d6ffa28c8d60efb.jpg" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/Screenshot_2023-09-04-22-12-39-51_92460851df6f172a4592fca41cc2d2e6.jpg')">
+                <img class="image" src="images/esports/Screenshot_2023-09-04-22-12-39-51_92460851df6f172a4592fca41cc2d2e6.jpg" alt="Event Image 4">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/IMG_20230904_221520_072.jpg')">
+                <img class="image" src="images/esports/IMG_20230904_221520_072.jpg" alt="Event Image 2">
+            </div>
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="event-info">
+            <h2>666 Lan</h2>
+            <p>Antwerp Expo</p>
+            <p>April 2023</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-container" onclick="openModal('images/esports/Screenshot_2023-04-26-20-18-11-24_0b2fce7a16bf2b728d6ffa28c8d60efb.jpg')">
+                <img class="image" src="images/esports/Screenshot_2023-04-26-20-18-11-24_0b2fce7a16bf2b728d6ffa28c8d60efb.jpg" alt="Event Image 1">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/Screenshot_2023-04-26-20-18-14-62_0b2fce7a16bf2b728d6ffa28c8d60efb.jpg')">
+                <img class="image" src="images/esports/Screenshot_2023-04-26-20-18-14-62_0b2fce7a16bf2b728d6ffa28c8d60efb.jpg" alt="Event Image 2">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/Screenshot_2023-04-27-00-44-13-35_a23b203fd3aafc6dcb84e438dda678b6.jpg')">
+                <img class="image" src="images/esports/Screenshot_2023-04-27-00-44-13-35_a23b203fd3aafc6dcb84e438dda678b6.jpg" alt="Event Image 3">
+            </div>
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="event-info">
+            <h2>Dreamhack Rotterdam</h2>
+            <p>Ahoy Arena</p>
+            <p>Oktober 2022</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-container" onclick="openModal('images/esports/IMG-20221015-WA0002.jpg')">
+                <img class="image" src="images/esports/IMG-20221015-WA0002.jpg" alt="Event Image 1">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/IMG-20221015-WA0004.jpg')">
+                <img class="image" src="images/esports/IMG-20221015-WA0004.jpg" alt="Event Image 2">
+            </div>
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="event-info">
+            <h2>Elite Series Season 2</h2>
+            <p>Online</p>
+            <p>Juni-Oktober 2022</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-container" onclick="openModal('images/esports/ESCS2022_Twitter_Sythr.png')">
+                <img class="image" src="images/esports/ESCS2022_Twitter_Sythr.png" alt="Event Image 1">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/Screenshot_20220701-220442.jpg')">
+                <img class="image" src="images/esports/Screenshot_20220701-220442.jpg" alt="Event Image 2">
+            </div>
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="event-info">
+            <h2>Bootcamp KAA Gent</h2>
+            <p>Ghelamco Arena</p>
+            <p>Juni 2022</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-container" onclick="openModal('images/esports/IMG_20230328_140756.jpg')">
+                <img class="image" src="images/esports/IMG_20230328_140756.jpg" alt="Event Image 1">
+            </div>
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="event-info">
+            <h2>Elite Series Season 1</h2>
+            <p>Online</p>
+            <p>Februari-April 2022</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-container" onclick="openModal('images/esports/ESCS2022_Twitter_MCON_Syth.png')">
+                <img class="image" src="images/esports/ESCS2022_Twitter_MCON_Syth.png" alt="Event Image 1">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/mConLGUltraGear2022_Profile_Syther.png')">
+                <img class="image" src="images/esports/mConLGUltraGear2022_Profile_Syther.png" alt="Event Image 2">
+            </div>
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="event-info">
+            <h2>Bootcamp Team Netleaf</h2>
+            <p>Herenthout</p>
+            <p>Zomer 2020</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-container" onclick="openModal('images/esports/received_4473595089336575.jpeg')">
+                <img class="image" src="images/esports/received_4473595089336575.jpeg" alt="Event Image 1">
+            </div>
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="event-info">
+            <h2>Louvard Game</h2>
+            <p>Stade du Pays de Charleroi</p>
+            <p>Februari 2019</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-container" onclick="openModal('images/esports/IMG_0626.jpg')">
+                <img class="image" src="images/esports/IMG_0626.jpg" alt="Event Image 1">
+            </div>
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="event-info">
+            <h2>LAS Vagas LAN</h2>
+            <p>HyperX Arena Las Vegas</p>
+            <p>Zomer 2018</p>
+        </div>
+        <div class="image-gallery">
+            <div class="image-container" onclick="openModal('images/esports/IMG_0152.jpg')">
+                <img class="image" src="images/esports/IMG_0152.jpg" alt="Event Image 1">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/IMG_0157.jpg')">
+                <img class="image" src="images/esports/IMG_0157.jpg" alt="Event Image 2">
+            </div>
+            <div class="image-container" onclick="openModal('images/esports/IMG_0160.jpg')">
+                <img class="image" src="images/esports/IMG_0160.jpg" alt="Event Image 2">
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="modal-content">
+            <img id="modalImage" class="modal-image">
+        </span>
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            const modal = document.getElementById("imageModal");
+            const modalImage = document.getElementById("modalImage");
+            modalImage.src = imageSrc;
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
