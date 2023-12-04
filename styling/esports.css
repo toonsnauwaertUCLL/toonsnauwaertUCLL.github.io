@@ -307,11 +307,41 @@ footer {
   .but a {
     color: white;
   }
+
+  .but2 {
+    flex-basis: calc(48% - 10px);
+    margin-bottom: 20px;
+    padding: 40px 30px;
+    background-color: rgba(5, 8, 1, 0.7); /* Transparent background color */
+    color: #03e9f4;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px); /* Adjust the blur as needed */
+  }
+  
+  .but2:hover {
+    background: rgba(3, 233, 244, 0.7); /* Transparent hover background color */
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  }
+  
+  .but2 a {
+    color: white;
+  }
   
   /* Media Query for small screens (phones) */
   @media only screen and (max-width: 768px) {
-    .but {
+    .but,.but2 {
       flex-basis: 100%; /* Each button takes up 100% of the container width on smaller screens */
     }
   }
   
+
