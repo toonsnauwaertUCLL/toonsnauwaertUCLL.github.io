@@ -301,7 +301,7 @@ footer {
     background: #03e9f4;
     color: #050801;
     box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    -webkit-box-reflect: below 1px linear-gradient(transparent);
   }
 
   .but a {
@@ -330,7 +330,7 @@ footer {
     background: rgba(3, 233, 244, 0.7); /* Transparent hover background color */
     color: #050801;
     box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    -webkit-box-reflect: below 1px linear-gradient(transparent);
   }
   
   .but2 a {
@@ -343,5 +343,67 @@ footer {
       flex-basis: 100%; /* Each button takes up 100% of the container width on smaller screens */
     }
   }
+  @media only screen and (max-width: 900px) {
+    nav {
+      height: auto;
+      position: relative;
+    }
+  
+    .logo a {
+      font-size: 1.5rem;
+    }
+  
+    .menu {
+      display: block;
+      text-align: center;
+    }
+  
+    .menu a {
+      display: block;
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+  
+    /* Adjust other styles as needed for mobile layout */
+    #main .main-text {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  
+    #services .title h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+  
+    .service-box {
+      width: 100%;
+      height: auto;
+    }
+  
+    .service-box p {
+      width: 100%;
+      margin: 10px 0 20px 0;
+    }
+  
+    #contact .form,
+    .row,
+    .row2 {
+      width: 100%;
+    }
+  
+    .row input,
+    .row2 textarea {
+      width: 100%;
+    }
+  
+    .row2 input[type='submit'] {
+      width: 100%;
+    }
+  
+    /* Adjust other styles for mobile layout */
+  }
+  
   
 

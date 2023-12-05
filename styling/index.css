@@ -22,7 +22,7 @@ nav{
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
-  height: 50px;
+  height: 60px;
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -244,14 +244,14 @@ nav{
 
 .img-circle {
   border-radius: 50%;
-  width: 150px; /* Adjust the width as needed */
-  height: 150px; /* Adjust the height as needed */
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  box-shadow: 0px 1px 2px rgba(0, 255, 255, 0.5),
-              0px 2px 4px rgba(0, 255, 255, 0.5),
-              0px 4px 8px rgba(0, 255, 255, 0.5),
-              0px 8px 16px rgba(0, 255, 255, 0.5);
-  border: 5px solid #000; /* Adjust the thickness and color as needed */
+  box-shadow: 0px 2px 4px rgba(0, 255, 255, 10), /* Increased glow effect */
+              0px 4px 8px rgba(0, 255, 255, 10),
+              0px 8px 16px rgba(0, 255, 255, 10),
+              0px 16px 32px rgba(0, 255, 255, 10); /* Increased glow effect */
+  border: 3px solid #000;
 }
 
 /* Footer */
@@ -265,4 +265,66 @@ footer {
               0px -2px 4px rgba(0, 255, 255, 0.5),
               0px -4px 8px rgba(0, 255, 255, 0.5),
               0px -8px 16px rgba(0, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 900px) {
+  nav {
+    height: auto;
+    position: relative;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .menu {
+    display: block;
+    text-align: center;
+  }
+
+  .menu a {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+
+  /* Adjust other styles as needed for mobile layout */
+  #main .main-text {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  #services .title h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .service-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-box p {
+    width: 100%;
+    margin: 10px 0 20px 0;
+  }
+
+  #contact .form,
+  .row,
+  .row2 {
+    width: 100%;
+  }
+
+  .row input,
+  .row2 textarea {
+    width: 100%;
+  }
+
+  .row2 input[type='submit'] {
+    width: 100%;
+  }
+
+  /* Adjust other styles for mobile layout */
 }

@@ -47,7 +47,6 @@ main {
 /* Add styles for the navigation */
 nav {
 text-align: center;
-margin-top: 2rem;
 }
 
 nav ul {
@@ -57,7 +56,6 @@ padding: 0;
 
 nav li {
 display: inline;
-margin: 0 1rem;
 }
 
 nav a {
