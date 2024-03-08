@@ -98,7 +98,7 @@ figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 #fh5co-header .top a:hover {
   color: white !important;
@@ -241,7 +241,7 @@ figure {
   box-shadow: none;
   border: transparent;
   min-width: 15em;
-  *width: 15em;
+  width: 15em;
 }
 
 .sf-menu a {
@@ -302,7 +302,7 @@ figure {
 
 .sf-arrows .sf-with-ul {
   padding-right: 2.5em;
-  *padding-right: 1em;
+  padding-right: 1em;
 }
 
 .sf-arrows .sf-with-ul:after {
