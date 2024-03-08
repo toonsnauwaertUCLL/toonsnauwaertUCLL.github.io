@@ -598,11 +598,8 @@ h3.heading-section:before {
   height: calc(100% - 50%);
   position: relative;
 }
-@media screen and (max-width: 1300px) {
-  .work-wrap .fh5co-imgs {
-    margin-top: 10em;
-  }
-  .work-wrap fh5co-text {
+@media screen and (max-width: 1600px) {
+  .work-wrap {
     margin-top: 10em;
   }
 }
