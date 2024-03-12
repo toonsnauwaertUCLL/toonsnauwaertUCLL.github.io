@@ -1276,11 +1276,11 @@ span .fh5co-site-name:hover{
   column-gap: 15px;
 }
 header i {
-  color: #79c34f;
+  color: #5C4033;
   font-size: 32px;
 }
 header h2 {
-  color: #79c34f;
+  color: #5C4033;
   font-weight: 500;
 }
 .wrapper .data {
@@ -1291,7 +1291,7 @@ header h2 {
   font-size: 16px;
 }
 .data p a {
-  color: #79c34f;
+  color: #5C4033;
   text-decoration: none;
 }
 .data p a:hover {
@@ -1309,20 +1309,20 @@ header h2 {
   color: #fff;
   padding: 8px 0;
   border-radius: 4px;
-  background: #79c34f;
+  background: #5C4033;
   cursor: pointer;
   width: calc(100% / 2 - 10px);
   transition: all 0.2s ease;
 }
 .buttons #acceptBtn:hover {
-  background-color: #79c34f;
+  background-color: #5C4033;
 }
 #declineBtn {
-  border: 2px solid #79c34f;
+  border: 2px solid #5C4033;
   background-color: #fff;
-  color: #79c34f;
+  color: #5C4033;
 }
 #declineBtn:hover {
-  background-color: #79c34f;
+  background-color: #5C4033;
   color: #fff;
 }
