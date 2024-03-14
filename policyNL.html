@@ -26,6 +26,64 @@
 	<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 
 
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Indie+Flower&display=swap');
+		
+				.fh5co-services p,h1,h2,h3,h4,li,ul{
+					font-family: "Cormorant", serif;
+					font-weight: 500;
+					color: darkslategrey;
+				}
+		
+				.fh5co-services h2,h1,h3,h4{
+					align-items: center;
+					text-align: center;
+				}
+		
+				.fh5co-services h2,h3{
+					text-decoration: overline;
+				}
+		
+				.fh5co-services h1{
+					text-decoration: underline;
+				}
+				.fh5co-services ul{
+					list-style: square;
+					padding-left: 12%;
+				}
+				.fh5co-services p{
+					padding-left: 10%;
+				}
+				
+				.grid {
+					margin-top: 4em;
+					display: flex;
+					justify-content: center; /* Center the items horizontally */
+				}
+		
+				.content, .image-container {
+					flex: 1; /* Both items will take equal space */
+					max-width: 50%; /* Limit the width to 50% */
+					text-align: center; /* Center the content */
+				}
+		
+				.image-container {
+					max-width: 100%; /* Set the maximum width for the image container */
+				}
+		
+				.image-container img {
+					max-width: 70%; /* Ensure image does not exceed container width */
+					height: auto; /* Maintain aspect ratio */
+				}
+				hr {
+					height: 8px;
+					border: none;
+					background: linear-gradient(to right, #f7f7e3, #8B4513); /* Light brown to dark brown gradient */
+				}
+		
+		
+			</style>
+
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
@@ -67,12 +125,21 @@
 		</div>
 		
 
-		<div id="fh5co-services">
-			<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+		<div id="fh5co-services" class="fh5co-services">
+			<hr>
 
 			<h1 style="font-size: 5em;">Algemene voorwaarden</h1>
-			<p>For the English version (Engels) <a href="policy.html">click here</a></p>
+
+			<div class="grid">
+				<div class="content">
+					<p>For the English version (Engels) <a href="policy.html">click here</a></p>
 			<p>Pour la version française (Frans) <a href="policyFR.html">cliquez ici</a></p>
+				</div>
+				<div class="image-container">
+					<img src="images/logo.jpg">
+				</div>
+			</div>
+			
 			<hr style="height:2px;border-width:0;color:gray;background-color:gray">
 			<h1>Copyrightbeleid</h1>
 			<p><small>Alle inhoud en afbeeldingen op deze website zijn auteursrechtelijk beschermd. Reproductie, distributie of gebruik zonder toestemming is ten strengste verboden.</small></p>
