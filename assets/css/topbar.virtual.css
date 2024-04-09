@@ -27,6 +27,18 @@
   max-width: 400px;
 }
 
+.hover-parent:hover .text-white {
+  color: #171925 !important;
+  text-decoration: none !important;
+}
+
+.hover-parent .text-white {
+  margin-top: 2em;
+}
+
+.hover-parent:hover {
+  text-decoration: none;
+}
 .filterable-button .btn {
   padding: 5px 16px;
   margin: 6px;
