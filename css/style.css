@@ -20,7 +20,7 @@
 body {
   font-family: 'Walkway',serif, Arial, sans-serif;
   line-height: 1.5;
-  background: #f7f7e3;
+  background: #f7f7ed;
   color: #848484;
   font-weight: 300;
   overflow-x: hidden;
@@ -30,14 +30,14 @@ body.fh5co-offcanvas {
 }
 
 a {
-  color: #79c34f;
+  color: #4c6141;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: none !important;
-  color: #79c34f !important;
+  color: black !important;
 }
 
 p {
@@ -112,7 +112,7 @@ figure {
 }
 
 .greenhover:hover{
-  color: #79c34f !important;
+  color: #4c6141 !important;
 }
 .fh5co-cover,
 .fh5co-hero {
@@ -396,7 +396,7 @@ figure {
 }
 
 #fh5co-primary-menu > li > ul li.active > a {
-  color: #79c34f !important;
+  color: #4c6141 !important;
 }
 #fh5co-primary-menu > li > .sf-with-ul:after {
   border: none !important;
@@ -495,7 +495,7 @@ figure {
   background: none;
 }
 #fh5co-primary-menu .fh5co-sub-menu a:hover {
-  color: #79c34f !important;
+  color: #4c6141 !important;
 }
 
 #fh5co-work-section,
@@ -527,7 +527,7 @@ h3.heading-section:before {
   top: 0;
   width: 30px;
   height: 2px;
-  background: #79c34f;
+  background: #4c6141;
 }
 
 .fh5co-grid {
@@ -974,7 +974,7 @@ h3.heading-section:before {
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #79c34f;
+  background: #4c6141;
   color: #fff !important;
 }
 .btn:hover, .btn:active, .btn:focus {
@@ -1039,14 +1039,14 @@ h3.heading-section:before {
   color: rgba(255, 255, 255, 0.4);
 }
 #offcanvas-menu ul li a:hover {
-  color: #79c34f;
+  color: #4c6141;
 }
 #offcanvas-menu ul li > .fh5co-sub-menu {
   margin-top: 9px;
   padding-left: 20px;
 }
 #offcanvas-menu ul li.active > a {
-  color: #79c34f;
+  color: #4c6141;
 }
 
 .fh5co-nav-toggle {
