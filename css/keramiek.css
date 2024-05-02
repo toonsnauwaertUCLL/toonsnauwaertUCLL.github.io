@@ -343,7 +343,7 @@ p {
   .product-grid{
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 4px;
     border: 1px solid #e7e7e7;
     overflow: hidden;
     transition: all 0.4s ease-out;
