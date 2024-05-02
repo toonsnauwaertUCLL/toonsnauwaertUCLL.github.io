@@ -255,6 +255,46 @@ p {
       }
   }
 
+  @media screen and (min-width: 900px) {
+    .collections {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Display three columns */
+      place-items: center; /* Center the articles within the container */
+    }
+
+    .collections2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Display three columns */
+        place-items: center; /* Center the articles within the container */
+      }
+  }
+
+  @media screen and (min-width: 1450px) {
+    .collections {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Display three columns */
+      place-items: center; /* Center the articles within the container */
+    }
+
+    .card {
+      display: grid;
+      place-items: center;
+      width: 80vw;
+      max-width: 35.875rem;
+      height: 35.125rem;
+      overflow: hidden;
+      border-radius: 0.625rem;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+      margin-top: 1em;
+    }
+
+    .collections2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Display three columns */
+        place-items: center; /* Center the articles within the container */
+      }
+  }
+
  
   
   /* Media Query for Phone View */
@@ -265,6 +305,10 @@ p {
       place-items: center; /* Center the articles within the container */
 
     }
+
+    .collections2{
+      margin-top: 0em;
+  }
   }
 
   @media screen and (max-width: 480px) {
@@ -277,6 +321,22 @@ p {
     .card {
       margin-bottom: 2em;
     }
+
+    .collections2{
+      margin-top: 0em;
+  }
+
+  .card {
+    display: grid;
+    place-items: center;
+    width: 80vw;
+    max-width: 35.875rem;
+    height: 35.125rem;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+    margin-top: 1em;
+  }
   }
   
 

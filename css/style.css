@@ -393,7 +393,7 @@ figure {
 
   #fh5co-logo {
     order: 1; /* Reorder the logo to the first position */
-    margin: 0 auto; /* Center the logo horizontally */
+    margin: 1 auto; /* Center the logo horizontally */
     max-width: 15%;
     width: 100%;
     margin-top: 0.3em;
@@ -401,9 +401,10 @@ figure {
 }
 
 @media screen and (max-width: 533px) {
+  
   #fh5co-logo {
     order: 1; /* Reorder the logo to the first position */
-    margin: 0 auto; /* Center the logo horizontally */
+    margin: 1 auto; /* Center the logo horizontally */
     max-width: 18%;
     width: 100%;
     margin-top: 0.7em;

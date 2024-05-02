@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html class="no-js" lang="fr">
+<html class="no-js" lang="nl">
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,12 +24,14 @@
 
 
 	<script src="../js/cookies.js" defer></script>
+	<script src="../js/product.js" defer></script>
+
 	<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 
 
 	<script src="../js/modernizr-2.6.2.min.js"></script>
 	</head>
-	<body>
+	<body class="body-product">
 		<div id="fh5co-wrapper">
 		<div id="fh5co-page">
 		<div id="fh5co-header">
@@ -67,40 +68,35 @@
 				</div>
 			</header>
 		</div>
-		
 
-		<div id="fh5co-services" class="fh5co-services"> 
-            <div class="u-clearfix u-section-1" id="carousel_1da2">
-                <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-sheet-1">
-                  <div class="u-container-style u-expanded-width u-product u-product-1">
-                    <div class="u-container-layout u-valign-bottom-lg u-valign-bottom-md u-valign-top-xl u-container-layout-1"><!--product_image-->
-                      <img src="../images/index-kommen.jpg" alt="" class="u-image u-image-default u-product-control u-image-1">
-                      <img src="../images/index-kommen.jpg" class="u-image u-image-default u-product-control u-image-1"><!--/product_image--><!--product_image-->
-                      <div class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1">
-                        <div class="u-container-layout u-valign-middle u-container-layout-2"><!--product_title-->
-                          <h2 class="u-product-control u-text u-text-default u-text-1">Kom (groen)</h2><!--/product_title--><!--product_price-->
-                          <div class="u-product-control u-product-price u-product-price-1">
-                            <div class="u-price-wrapper u-spacing-10"><!--product_old_price-->
-                              <div class="u-hide-price u-old-price" style="color: green;">Beschikbaar</div><!--/product_old_price--><!--product_regular_price-->
-                              <div class="u-price" style="font-size: 1.875rem; font-weight: 700;">$17.00</div><!--/product_regular_price-->
-                            </div>
-                          </div><!--/product_price--><!--product_content-->
-                          <div class="u-product-desc u-product-desc u-text u-text-default u-text-2">
-                            <p>Grootte: 25cm x 30cm</p>
-                            <p>Materiaal: keramiek</p>
-                            <p>Kleur: Groen</p>
-                            <p class="tag" style="display: none;">#1532</p>
-                            </div>
-                            <p style="font-style: italic; font-size: 90%; margin-top: -1.2em;">Vanaf nu is het mogelijk om een product te reserveren. Als je op de knop 'Reserveer nu' klikt, stuur je ons een e-mail met een verzoek voor dit product. Binnen een week ontvang je meer details van ons.
-							Let op: Je koopt dit product nog niet, betalingen worden op locatie uitgevoerd, dit is enkel een reservering.</p>
-                          <a href="mailto:snachri@gmail.com?subject=Reservation%20Request&body=Product%20Details%0D%0ASize:%2025cm%20x%2030cm%0D%0AMaterial:%20keramiek%0D%0AColor:%20Groen%0D%0ATag:%20%231532" class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-product-control u-text-black u-text-hover-white u-btn-1 u-dialog-link u-payment-button" >Reserveer nu</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!--/product-->
-                </div>
-            </div>
-		</div>
+		<main>
+			<div class="container-prod">
+			  <div class="grid product">
+				<div class="column-xs-12 column-md-7">
+				  <div class="product-gallery" >
+					<div class="product-image" style="margin-top: 14em;">
+					  <img class="active" src="../images/hout-kom.jpg">
+					</div>
+					<ul class="image-list">
+					  <li class="image-item"><img src="../images/index-kommen.jpg" class="prod-img"></li>
+					  <li class="image-item"><img src="../images/hout-kom.jpg" class="prod-img"></li>
+					  <li class="image-item"><img src="../images/hout-kom.jpg" class="prod-img"></li>
+					</ul>
+				  </div>
+				</div>
+				<div class="column-xs-12 column-md-5">
+				  <h1>Kom</h1>
+				  <h2>$19.99</h2>
+				  <div class="description">
+					<p>Keramieken kom</p>
+					<p>kleur groen...</p>
+				  </div>
+				  <button class="add-to-cart"><a href="mailto:snachri@gmail.com?subject=Reservation%20Request&body=Product%20Details%0D%0ASize:%2025cm%20x%2030cm%0D%0AMaterial:%20keramiek%0D%0AColor:%20Groen%0D%0ATag:%20%231532" style="color: white;" >Reserveer nu</a>
+				  </button>
+				</div>
+			  </div>
+			</div>
+		  </main>
 
 		<footer>
 			<div id="footer">

@@ -1,370 +1,195 @@
-.u-section-1 .u-sheet-1 {
-    min-height: 536px;
-  }
-  
-  .u-section-1 .u-product-1 {
-    margin-top: 60px;
-    margin-bottom: -15px;
-    min-height: 415px;
+@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
+ * {
+	 box-sizing: border-box;
+}
+ *::before, *::after {
+	 box-sizing: border-box;
+}
+ .body-product {
+	 font-family: 'Pontano Sans', sans-serif;
+	 font-size: 1.125rem;
+	 line-height: 1.5;
+	 margin: 0;
+	 padding: 0;
+	 color: #888;
+	 background: #fff;
+	 text-rendering: optimizeLegibility;
+}
+ .image-list {
+	 padding: 0;
+	 margin: 0;
+	 list-style: none;
+}
+ .image-list li {
+	 margin: 0 1.75rem 0 0;
+}
+ h1, h2, h3, h4 {
+	 color: #333;
+	 font-weight: normal;
+	 margin: 1.75rem 0 1rem 0;
+}
+ h1 {
+	 font-size: 2.5rem;
+}
+ h2 {
+	 font-size: 2.125rem;
+	 margin: 0;
+}
+ h3 {
+	 font-size: 2rem;
+}
+ h4 {
+	 font-size: 1.5rem;
+	 margin: 1rem 0 0.5rem 0;
+}
+ section {
+	 display: block;
+}
+ .prod-img {
+	 max-width: 100%;
+	 height: auto;
+	 object-fit: cover;
+}
+ #highlight {
+	 color: #333;
+	 font-size: 1.125rem;
+	 text-transform: uppercase;
+}
+ .price {
+	 margin: 0;
+}
+ .breadcrumb-list {
+	 display: flex;
+	 flex-wrap: wrap;
+	 padding: 0;
+	 margin: 1rem 0 0 0;
+	 list-style: none;
+}
+ .breadcrumb-list li {
+	 font-size: 0.85rem;
+	 letter-spacing: 0.125rem;
+	 text-transform: uppercase;
+}
+ .breadcrumb-item.active {
+	 color: #333;
+}
+ .breadcrumb-item + .breadcrumb-item::before {
+	 content: '/';
+	 display: inline-block;
+	 padding: 0 0.5rem;
+	 color: #d5d5d5;
+}
+ .description {
+	 border-top: 0.0625rem solid #e3dddd;
+	 margin: 2rem 0;
+	 padding: 1rem 0 0 0;
+}
+ .add-to-cart {
+	 position: relative;
+	 display: inline-block;
+	 background: #3e3e3f;
+	 color: #fff;
+	 border: none;
+	 border-radius: 0;
+	 padding: 1.25rem 2.5rem;
+	 font-size: 1rem;
+	 text-transform: uppercase;
+	 cursor: pointer;
+	 transform: translateZ(0);
+	 transition: color 0.3s ease;
+	 letter-spacing: 0.0625rem;
+}
+ .add-to-cart:hover::before {
+	 transform: scaleX(1);
+}
+ .add-to-cart::before {
+	 position: absolute;
+	 content: '';
+	 z-index: -1;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 background: #565657;
+	 transform: scaleX(0);
+	 transform-origin: 0 50%;
+	 transition: transform 0.3s ease-out;
+}
+ .container-prod {
+	 margin: auto;
+	 padding: 0 1rem;
+	 max-width: 75rem;
+	 width: 100%;
+}
+ .grid > [class*="column-"] {
+	 padding: 1rem;
+}
+ .grid.menu, .grid.product {
+	 border-bottom: 0.0625rem solid #e3dddd;
+}
+ .grid.menu > [class*="column-"] {
+	 padding: 0.5rem 1rem 0.5rem 1rem;
+}
+ .grid.product {
+	 padding: 0 0 1.5rem 0;
+}
+ .product-image {
+	 display: none;
+}
+ .image-list li {
+	 margin: 0;
+}
+
+
+ @media (min-width: 200px) {
+	 .product-image img, .image-list img {
+		 width: 100%;
+	}
+	 .product-image {
+		 display: block;
+	}
+	 .product-image img {
+		 height: 52vh;
+	}
+	 .product-image img.active {
+		 display: block;
+		 margin: 0 0 0.75rem 0;
+	}
+	 .image-list {
+		 display: flex;
+		 overflow: hidden;
+	}
+	 .image-list li {
+		 margin: 0 0.75rem 0 0;
+		 flex-basis: 100%;
+	}
+	 .image-list li:nth-child(3) {
+		 margin: 0;
+	}
+	 .image-list img {
+		 height: 10rem;
+		 width: 100%;
+		 transition: opacity 0.3s ease;
+		 cursor: pointer;
+	}
+	 .image-list img:hover {
+		 opacity: 0.7;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .product-image img, .image-list img {
+    max-width: 100%;
     height: auto;
   }
   
-  .u-section-1 .u-container-layout-1 {
-    padding: 30px 30px 25px;
-  }
-  
-  .u-section-1 .u-image-1 {
-    width: 304px;
-    height: 360px;
-    margin: 0 auto 0 0;
-  }
-  
-  .u-section-1 .u-image-2 {
-    width: 299px;
-    height: 360px;
-    margin: -360px auto 0 324px;
-  }
-  
-  .u-section-1 .u-group-1 {
-    width: 442px;
-    min-height: 360px;
-    height: auto;
-    margin: -360px 0 0 auto;
-  }
-  
-  .u-section-1 .u-container-layout-2 {
-    padding: 30px;
-  }
-  
-  .u-section-1 .u-text-1 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  .u-section-1 .u-product-price-1 {
-    margin-bottom: 0;
-    margin-top: 30px;
-  }
-  
-  .u-section-1 .u-text-2 {
-    margin: 25px 0 0;
-  }
-
-  .u-text-2 p {
-    margin-top: -1em;
-  }
-  
-  .u-section-1 .u-btn-1 {
-    border-style: solid;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 20px auto 0;
-    padding: 10px 137px 10px 136px;
-  }
-  
-  .tag{
-    font-size: 90%; 
-    margin-left: 85%;
-  }
-  @media (max-width: 1199px) {
-    .u-section-1 .u-sheet-1 {
-      min-height: 834px;
-    }
-  
-    .u-section-1 .u-product-1 {
-      margin-bottom: 10px;
-      min-height: 714px;
-    }
-  
-    .u-section-1 .u-group-1 {
-      min-height: 299px;
-      margin-top: 0;
-      margin-right: initial;
-      margin-left: initial;
-      width: auto;
-      height: auto;
-    }
-  
-    .u-section-1 .u-container-layout-2 {
-      padding-top: 23px;
-      padding-bottom: 23px;
-    }
-  
-    .u-section-1 .u-text-1 {
-      margin-right: auto;
-      margin-left: 0;
-    }
-  
-    .u-section-1 .u-product-price-1 {
-      margin-right: auto;
-      margin-left: 0;
-    }
-  
-    .u-section-1 .u-text-2 {
-      margin-right: auto;
-    }
-  
-    .u-section-1 .u-btn-1 {
-      margin-left: 0;
-    }
-    .tag{
-      margin-left: 0%;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .u-section-1 .u-sheet-1 {
-      min-height: 773px;
-    }
-  
-    .tag{
-      margin-left: 0%;
-    }
-    .u-section-1 .u-product-1 {
-      margin-bottom: -1px;
-      min-height: 653px;
-    }
-  
-    .u-section-1 .u-container-layout-1 {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  
-    .u-section-1 .u-image-1 {
-      width: 245px;
-      height: 262px;
-      margin-top: 1px;
-    }
-  
-    .u-section-1 .u-image-2 {
-      width: 255px;
-      height: 262px;
-      margin-top: -10px;
-      margin-right: 0;
-      margin-left: auto;
-    }
-  
-    .u-section-1 .u-group-1 {
-      margin-top: 10px;
-      width: auto;
-      margin-right: initial;
-      margin-left: initial;
-    }
-  
-    .u-section-1 .u-container-layout-2 {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-  
-  @media (max-width: 575px) {
-    .u-section-1 .u-sheet-1 {
-      min-height: 1015px;
-    }
-  
-    .tag{
-      margin-left: 0%;
-    }
-    .u-section-1 .u-product-1 {
-      margin-top: 55px;
-      margin-bottom: 55px;
-      min-height: 905px;
-    }
-  
-    .u-section-1 .u-image-1 {
-      margin-top: 10px;
-      margin-left: 25%;
-    }
-  
-    .u-section-1 .u-image-2 {
-      width: 245px;
-      height: 256px;
-      margin-top: -10px;
-      margin-right: auto;
-      margin-left: 0;
-    }
-  
-    .u-section-1 .u-group-1 {
-      min-height: 310px;
-      margin-top: 10px;
-      width: auto;
-      margin-right: initial;
-      margin-left: initial;
-    }
-  
-    .u-section-1 .u-btn-1 {
-      margin-right: 0;
-      padding-right: 96px;
-      padding-bottom: 11px;
-      padding-left: 95px;
-    }
-  }.u-section-2 .u-sheet-1 {
-    min-height: 400px;
-  }.u-section-3 .u-sheet-1 {
-    min-height: 400px;
-  }
-  
-  @media (max-width: 1199px) {
-    .u-section-3 .u-sheet-1 {
-      min-height: 330px;
-    }
-  }
-  
-  @media (max-width: 991px) {
-    .u-section-3 .u-sheet-1 {
-      min-height: 253px;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .u-section-3 .u-sheet-1 {
-      min-height: 480px;
-    }
-  }
-  
-  @media (max-width: 575px) {
-    .u-section-3 .u-sheet-1 {
-      min-height: 339px;
-    }
-  }
-
-  .u-dialog-section-6 .u-dialog-1 {
-    width: 570px;
-    min-height: 578px;
-    height: auto;
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
-    margin: 60px auto;
-  }
-  
-  .u-dialog-section-6 .u-container-layout-1 {
-    padding: 34px 35px;
-  }
-  
-  .u-dialog-section-6 .u-text-1 {
-    font-weight: 700;
-    margin: 0 165px 0 0;
-  }
-  
-  .u-dialog-section-6 .u-products-1 {
-    margin-top: 30px;
-    margin-bottom: 0;
-  }
-  
-  .u-dialog-section-6 .u-repeater-1 {
-    grid-template-columns: 100%;
-    min-height: 206px;
-    grid-gap: 10px;
-  }
-  
-  .u-dialog-section-6 .u-container-layout-2 {
-    padding: 0 0 30px;
-  }
-  
-  .u-dialog-section-6 .u-text-2 {
-    background-image: none;
-    margin: 0;
-  }
-  
-  .u-dialog-section-6 .u-text-3 {
-    font-size: 0.875rem;
-    margin: 20px 0 0;
-  }
-  
-  .u-dialog-section-6 .u-product-quantity-1 {
-    width: 125px;
-    margin: 30px auto 0 0;
-  }
-  
-  .u-dialog-section-6 .u-product-price-1 {
-    margin: -34px 0 0 auto;
-  }
-  
-  .u-dialog-section-6 .u-payment-services-1 {
-    min-height: 250px;
-    min-width: 50px;
-    margin: 0;
-  }
-  
-  .u-dialog-section-6 .u-container-layout-3 {
-    padding: 20px 0 0;
-  }
-  
-  .u-dialog-section-6 .u-container-layout-4 {
-    padding: 20px 0 0;
-  }
-  
-  .u-dialog-section-6 .u-btn-1 {
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .u-dialog-section-6 .u-icon-1 {
-    width: 20px;
-    height: 20px;
-    left: auto;
-    top: 36px;
-    position: absolute;
-    right: 35px;
-    padding: 0;
-  }
-  
-  @media (max-width: 1199px) {
-    .u-dialog-section-6 .u-text-1 {
-      margin-right: 165px;
-    }
-  
-    .u-dialog-section-6 .u-payment-services-1 {
-      margin-right: initial;
-      margin-left: initial;
-    }
-  }
-  
-  @media (max-width: 991px) {
-    .u-dialog-section-6 .u-container-layout-1 {
-      padding: 30px;
-    }
-  
-    .u-dialog-section-6 .u-container-layout-3 {
-      padding-bottom: 0;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  
-    .u-dialog-section-6 .u-container-layout-4 {
-      padding-bottom: 0;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  
-    .u-dialog-section-6 .u-icon-1 {
-      top: 32px;
-      right: 30px;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .u-dialog-section-6 .u-dialog-1 {
-      width: 540px;
-    }
-  }
-  
-  @media (max-width: 575px) {
-    .u-dialog-section-6 .u-dialog-1 {
-      width: 340px;
-    }
-  
-    .u-dialog-section-6 .u-container-layout-1 {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  
-    .u-dialog-section-6 .u-text-1 {
-      margin-right: 5px;
-    }
-  
-    .u-dialog-section-6 .u-icon-1 {
-      right: 20px;
-    }
-  }
-
+}
+ @keyframes fadeImg {
+	 from {
+		 opacity: 0;
+	}
+	 to {
+		 opacity: 1;
+	}
+}
  
