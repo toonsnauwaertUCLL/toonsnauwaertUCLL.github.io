@@ -1,12 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Pontano+Sans');
- * {
+@font-face {
+	font-family: 'Walkway';
+	src: url('WalkwayUltraBold.woff2') format('woff2'),
+		url('WalkwayUltraBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+  }
+  
+  * {
 	 box-sizing: border-box;
 }
  *::before, *::after {
 	 box-sizing: border-box;
 }
  .body-product {
-	 font-family: 'Pontano Sans', sans-serif;
+	 font-family: 'Walkway',serif, Arial, sans-serif;
 	 font-size: 1.125rem;
 	 line-height: 1.5;
 	 margin: 0;
