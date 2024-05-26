@@ -485,7 +485,7 @@ p {
 }
 .product-grid .title a:hover{ color: #78a206; }
 .product-grid .price{
-    color: #78a206;
+    color: #8b9c84;
     font-size: 17px;
     font-weight: 600;
     display: block;
@@ -499,7 +499,7 @@ p {
 .product-grid:hover .price{ opacity: 0; }
 .product-grid .add-to-cart{
     color: #fff;
-    background-color: #78a206;
+    background-color: #8b9c84;
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
