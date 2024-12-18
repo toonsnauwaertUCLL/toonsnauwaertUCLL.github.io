@@ -1404,3 +1404,43 @@ header h2 {
   background-color: #5C4033;
   color: #fff;
 }
+
+/* Back-to-Top Button Styles */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #46332a, #663817);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+#back-to-top:hover {
+  background: linear-gradient(135deg, #8B4513, #5C4033);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+/* Button Visibility Animation */
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#back-to-top.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}

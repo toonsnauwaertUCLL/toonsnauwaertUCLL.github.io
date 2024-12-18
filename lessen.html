@@ -72,7 +72,7 @@
 			<div class="fh5co-cover text-center" style="background-image: url(images/lessen-main3.jpg);">
 				<div class="desc animate-box">
 					<h2>Workshops</h2>
-					<span><a class="btn btn-primary" href="#">Wat is het? ↓</a>
+					<span><a class="btn btn-primary" href="#fh5co-about">Wat is het? ↓</a>
 					</span>
 				</div>
 			</div>
@@ -144,6 +144,14 @@
 
 	<!-- jQuery -->
 
+	<script>
+		document.querySelector('.btn.btn-primary').addEventListener('click', function (event) {
+			event.preventDefault(); // Prevent the default anchor behavior
+			document.querySelector('#fh5co-about').scrollIntoView({
+				behavior: 'smooth' // Smooth scrolling effect
+			});
+		});
+		</script>
 
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -159,6 +167,36 @@
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 
+	<button id="back-to-top" style="display: none;">
+		⇡
+	</button>
+	
+	
+	<script>
+		// Grab the button
+const backToTopButton = document.getElementById('back-to-top');
+
+// Show or hide the button when scrolling
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopButton.classList.add('show');
+        backToTopButton.classList.remove('hide');
+    } else {
+        backToTopButton.classList.add('hide');
+        backToTopButton.classList.remove('show');
+    }
+});
+
+// Smooth scroll to top when the button is clicked
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+});
+
+	</script>
+	
 	</body>
 </html>
 
